@@ -1,12 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import Routes from './routes';
+import TodoList from './TodoList';
 
 function App() {
   return (
     <Provider store={store}>
-      <Routes />
+      <div className="App">
+        <TodoList />
+      </div>
     </Provider>
   );
 }

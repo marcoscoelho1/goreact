@@ -9,6 +9,7 @@
     "rules": {
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
         "import/prefer-default-export": "off",
-        "react/jsx-one-expression-per-line": "off"
+        "react/jsx-one-expression-per-line": "off",
+        "max-len": "off"
     }
 }

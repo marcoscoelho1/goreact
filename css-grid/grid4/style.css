@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: [site-start]repeat(5, 1fr) [site-end];
+    grid-auto-rows: 200px;
+    grid-gap: 1rem;
+  }
+}
+
+header,
+footer {
+  grid-column: site-start / site-end;
+}
+
+.wrapper * {
+  background-color: royalblue;
+  padding: 1rem;
+}
+
+.wrapper *:nth-child(even) {
+  background-color: skyblue;
+}

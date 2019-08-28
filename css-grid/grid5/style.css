@@ -1,0 +1,59 @@
+.l-wrapper {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside-main"
+    "sidebar"
+    "aside-sec"
+    "footer";
+}
+
+.l-header {
+  background-color: skyblue;
+  grid-area: header;
+}
+
+.l-main {
+  background-color: coral;
+  grid-area: main;
+}
+
+.l-sidebar {
+  background-color: royalblue;
+  grid-area: sidebar;
+}
+
+.l-footer {
+  background-color: red;
+  grid-area: footer;
+}
+
+.l-aside-main {
+  background-color: purple;
+  grid-area: aside-main;
+}
+
+.l-aside-sec {
+  background-color: pink;
+  grid-area: aside-sec;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      "header header header header header header"
+      ". main main main sidebar ."
+      ". aside-main aside-main aside-sec aside-sec ."
+      "footer footer footer footer footer footer";
+  }
+}
